@@ -98,6 +98,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'drf_api.urls'
@@ -141,6 +142,19 @@ DATABASES = {
     )
     )
 }
+
+#  if 'DEV' in os.environ:
+#      DATABASES = {
+#          'default': {
+#              'ENGINE': 'django.db.backends.sqlite3',
+#              'NAME': BASE_DIR / 'db.sqlite3',
+#          }
+#      }
+#  else:
+#      DATABASES = {
+#          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#      }
+    # print('connected')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
