@@ -63,8 +63,8 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'localhost', 
-    '8000-ilswh-ciwalkthroughres-l8e03bjuca7.ws-eu108.gitpod.io', 
+    'localhost',
+    '8000-ilswh-ciwalkthroughres-l8e03bjuca7.ws-eu108.gitpod.io',
     'https://ci-walkthrough-rest-0d3c72236631.herokuapp.com/',
 ]
 
@@ -104,7 +104,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
-    
+    # local files
     'profiles',
     'posts',
     'comments',
