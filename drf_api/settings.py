@@ -64,8 +64,7 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    '8000-ilswh-ciwalkthroughres-l8e03bjuca7.ws-eu108.gitpod.io',
-    'ci-walkthrough-rest-0d3c72236631.herokuapp.com',
+    'bakers-drfapi-f4c1c693be28.herokuapp.com',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
